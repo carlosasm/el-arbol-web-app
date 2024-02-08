@@ -6,11 +6,9 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "../components/typography/Typography";
 import CurvyLinesImg from "../assets/images/productCurvyLines.png";
-import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
-import GroupsOutlinedIcon from "@mui/icons-material/GroupsOutlined";
-import RecordVoiceOverOutlinedIcon from "@mui/icons-material/RecordVoiceOverOutlined";
-import AlarmOnOutlinedIcon from "@mui/icons-material/AlarmOnOutlined";
-import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
+import PetsOutlinedIcon from "@mui/icons-material/PetsOutlined";
+import VaccinesOutlinedIcon from "@mui/icons-material/VaccinesOutlined";
+import LocalHospitalOutlinedIcon from "@mui/icons-material/LocalHospitalOutlined";
 import { WHITE_BG } from "../utils/Constants";
 
 const item: SxProps<Theme> = {
@@ -19,23 +17,24 @@ const item: SxProps<Theme> = {
   alignItems: "center",
   px: 5,
 };
-
 // eslint-disable-next-line no-lone-blocks
-{/**
+{
+  /**
 const number = {
   fontSize: 24,
-  fontFamily: "default",
-  color: "secondary.main",
-  fontWeight: "medium",
+  fontFamily: 'default',
+  color: 'secondary.main',
+  fontWeight: 'medium',
 };
-**/}
+**/
+}
 
 const image = {
   height: 25,
   my: 4,
 };
 
-function ProductHowItWorks() {
+function ProductHowItWorksVet() {
   return (
     <Box
       component="section"
@@ -71,11 +70,9 @@ function ProductHowItWorks() {
               <Box sx={item}>
                 {/** <Box sx={number}>1.</Box>**/}
                 <Box component="img" sx={image} />
-                <VerifiedUserOutlinedIcon
-                  sx={{ fontSize: 55, marginBottom: 4 }}
-                />
+                <PetsOutlinedIcon sx={{ fontSize: 55, marginBottom: 4 }} />
                 <Typography variant="h5" align="center">
-                  Clases con profesores certificados.
+                  Atención médica veterinaria de calidad.
                 </Typography>
               </Box>
             </Grid>
@@ -83,9 +80,9 @@ function ProductHowItWorks() {
               <Box sx={item}>
                 {/** <Box sx={number}>2.</Box>**/}
                 <Box component="img" sx={image} />
-                <GroupsOutlinedIcon sx={{ fontSize: 55, marginBottom: 4 }} />
+                <VaccinesOutlinedIcon sx={{ fontSize: 55, marginBottom: 4 }} />
                 <Typography variant="h5" align="center">
-                  Grupos reducidos para una atención personalizada.
+                  Vacunas, desparasitaciones y otros servicios preventivos.
                 </Typography>
               </Box>
             </Grid>
@@ -93,51 +90,19 @@ function ProductHowItWorks() {
               <Box sx={item}>
                 {/** <Box sx={number}>3.</Box>**/}
                 <Box component="img" sx={image} />
-                <RecordVoiceOverOutlinedIcon
+                <LocalHospitalOutlinedIcon
                   sx={{ fontSize: 55, marginBottom: 4 }}
                 />
                 <Typography variant="h5" align="center">
-                  Metodología innovadora y enfoque conversacional.
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Box sx={item}>
-                {/** <Box sx={number}>4.</Box>**/}
-                <Box component="img" sx={image} />
-                <AlarmOnOutlinedIcon sx={{ fontSize: 55, marginBottom: 4 }} />
-                <Typography variant="h5" align="center">
-                  Horarios flexibles que se adaptan a tu ritmo de vida.
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Box sx={item}>
-                {/** <Box sx={number}>5.</Box>**/}
-                <Box component="img" sx={image} />
-                <AutoStoriesOutlinedIcon
-                  sx={{ fontSize: 55, marginBottom: 4 }}
-                />
-                <Typography variant="h5" align="center">
-                  Preparación para exámenes internacionales.
+                  Diagnóstico y tratamiento de enfermedades.
                 </Typography>
               </Box>
             </Grid>
           </Grid>
         </div>
-        {/**<Button
-          color="success"
-          size="large"
-          variant="contained"
-          component="a"
-          href="#"
-          sx={{ mt: 8 }}
-        >
-          Get started
-        </Button>**/}
       </Container>
     </Box>
   );
 }
 
-export default ProductHowItWorks;
+export default ProductHowItWorksVet;

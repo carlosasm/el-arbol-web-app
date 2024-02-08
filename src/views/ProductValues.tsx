@@ -1,93 +1,80 @@
-import * as React from 'react';
-import { Theme } from '@mui/material/styles';
-import { SxProps } from '@mui/system';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container';
-import Typography from '../components/typography/Typography';
-import CurvyLinesImg from '../assets/images/productCurvyLines.png';
+import * as React from "react";
+import { Theme } from "@mui/material/styles";
+import { SxProps } from "@mui/system";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
+import { WHITE_BG } from "../utils/Constants";
+import Typography from "../components/typography/Typography";
+import CurvyLinesImg from "../assets/images/productCurvyLines.png";
+import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
+import PetsOutlinedIcon from "@mui/icons-material/PetsOutlined";
+import DevicesOutlinedIcon from "@mui/icons-material/DevicesOutlined";
 
 const item: SxProps<Theme> = {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
   px: 5,
 };
 
 function ProductValues() {
   return (
     <Box
+      id="services"
       component="section"
-      sx={{ display: 'flex', overflow: 'hidden', bgcolor: '#fff5f8' }}
+      sx={{ display: "flex", overflow: "hidden", bgcolor: WHITE_BG }}
     >
-      <Container sx={{ mt: 15, mb: 30, display: 'flex', position: 'relative' }}>
+      <Container sx={{ mt: 15, mb: 30, display: "flex", position: "relative" }}>
         <Box
           component="img"
           src={CurvyLinesImg}
           alt="curvy lines"
-          sx={{ pointerEvents: 'none', position: 'absolute', top: -180 }}
+          sx={{ pointerEvents: "none", position: "absolute", top: -180 }}
         />
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src="https://mui.com/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
-                sx={{ height: 55 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
-              Lorem ipsum
+              <Box component="img" sx={{ height: 25 }} />
+              <SchoolOutlinedIcon sx={{ fontSize: 60 }} />
+              <Typography variant="h5" sx={{ my: 5 }}>
+                Cursos de Inglés para Adultos y Adolescentes
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="h6">
                 {
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie ipsum vestibulum mattis tincidunt.'
+                  "En El Árbol English School, te ofrecemos cursos de inglés personalizados para adultos y adolescentes de todos los niveles."
                 }
-                {
-                  '1'
-                }
+                {""}
               </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src="https://mui.com/static/themes/onepirate/productValues2.svg"
-                alt="graph"
-                sx={{ height: 55 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
-              Lorem ipsum 2
+              <Box component="img" sx={{ height: 25 }} />
+              <PetsOutlinedIcon sx={{ fontSize: 60 }} />
+              <Typography variant="h5" sx={{ my: 5 }}>
+                Servicio de Veterinaria a Domicilio
               </Typography>
-              <Typography variant="h5">
-              {
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie ipsum vestibulum mattis tincidunt.'
-                }
+              <Typography variant="h6">
                 {
-                  '2'
+                  "El Árbol English School también ofrece un servicio de veterinaria a domicilio para que tu mascota reciba la atención médica que necesita sin tener que salir de casa."
                 }
+                {""}
               </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src="https://mui.com/static/themes/onepirate/productValues3.svg"
-                alt="clock"
-                sx={{ height: 55 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
-              Lorem ipsum 3
+              <Box component="img" sx={{ height: 25 }} />
+              <DevicesOutlinedIcon sx={{ fontSize: 60 }} />
+              <Typography variant="h5" sx={{ my: 5 }}>
+                Cursos de Inglés en Línea
               </Typography>
-              <Typography variant="h5">
-              {
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie ipsum vestibulum mattis tincidunt.'
-                }
+              <Typography variant="h6">
                 {
-                  '3'
+                  "Con nuestros cursos de inglés en línea, podrás aprender inglés a tu ritmo y sin salir de casa."
                 }
+                {""}
               </Typography>
             </Box>
           </Grid>

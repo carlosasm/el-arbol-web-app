@@ -5,9 +5,11 @@ import ProductHero from './views/ProductHero';
 import ProductValues from './views/ProductValues';
 import ProductCategories from './views/ProductCategories';
 import ProductHowItWorks from './views/HowItWorks';
-import ProductCTA from './views/ProductCTA';
 import ProductSmokingHero from './views/ProductSmokingHero';
 import AppFooter from './views/AppFooter';
+import ProductCategoriesVet from './views/ProductCategoriesVet';
+import ProductHowItWorksVet from './views/HowItWorksVet';
+import ContactForm from './views/ContactUs';
 
 function App() {
   return (
@@ -17,8 +19,10 @@ function App() {
     <ProductValues />
     <ProductCategories />
     <ProductHowItWorks />
-    <ProductCTA />
+    <ProductCategoriesVet />
+    <ProductHowItWorksVet />
     <ProductSmokingHero />
+    <ContactForm />
     <AppFooter />
     </>
     
